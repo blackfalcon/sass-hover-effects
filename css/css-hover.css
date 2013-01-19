@@ -1,0 +1,217 @@
+﻿body
+{
+    background-color: #E5E5E5;
+    font-family: Tahoma, Calibri, 'Trebuchet MS' , Arial;
+    margin: 20px;
+    color: #666666;
+}
+h1, h2
+{
+    clear: both;
+    font-weight: normal;
+    text-shadow: 1px 1px 0px #FFFFFF;
+}
+
+/* Common division block */
+.holder
+{
+    border: 6px solid #FFFFFF;
+    float: left;
+    margin: 20px;
+    position: relative;    
+    overflow: hidden;
+    box-shadow: 0px 0px 5px #333333;
+    -webkit-transition: 0.5s Ease;
+    -moz-transition: 0.5s Ease;
+    -o-transition: 0.5s Ease;
+    transition: 0.5s Ease;    
+}
+
+/* Caption and Light */
+.caption
+{
+    color: rgba(0,0,0,0);
+    line-height: 100px;
+    
+}
+.caption:hover
+{
+    border: 6px solid #E0E0E0;
+    color: rgb(255,255,255);
+    line-height: 500px;
+    box-shadow: 0px 0px 10px 7px #FFFFFF;    
+}
+.caption>div
+{
+    position: absolute;
+    top: 0px;
+    left: 50px;
+    font-size: 30px;    
+}
+
+/* Smooth Caption */
+.smooth
+{
+    opacity: 0.6;    
+}
+.smooth:hover
+{
+    opacity: 1;
+    box-shadow: 0px 0px 10px #333333;
+}
+.go-left
+{
+    background-color: rgba(0,0,0,0.5);
+    color: #FFFFFF;
+    position: absolute;
+    bottom: 0px;
+    right: -600px;
+    width: 360px;
+    text-align:center;   
+    font-size: 20px;
+    margin: 10px;
+    padding: 10px;
+    -webkit-transition: 0.5s Ease;
+    -moz-transition: 0.5s Ease;
+    -o-transition: 0.5s Ease;
+    transition: 0.5s Ease;
+}
+.smooth:hover > .go-left
+{    
+    right:0px;    
+}
+.go-top
+{
+    background-color: rgba(0,0,0,0.5);
+    color: #FFFFFF;
+    position: absolute;
+    bottom: 0px;
+    top: 600px;
+    width: 360px;
+    text-align:center;   
+    font-size: 20px;
+    margin: 10px;
+    padding: 10px;
+    -webkit-transition: 0.5s Ease;
+    -moz-transition: 0.5s Ease;
+    -o-transition: 0.5s Ease;
+    transition: 0.5s Ease;
+}
+.smooth:hover > .go-top
+{    
+    top:0px;    
+}
+.go-top p
+{
+    font-size: 12px;
+}
+
+/* Show Details */
+.details-holder
+{
+    float: left;
+    position: relative;
+    margin: 20px 5px 120px 5px;
+}
+.show-details img
+{
+    opacity: 0.5;
+    width: 200px;
+    height: 150px;
+}
+.show-details:hover img
+{
+    position: relative;
+    opacity: 1;
+    z-index: 99;    
+}
+.img-info
+{
+    padding: 170px 10px 0px 10px;
+    position: absolute;
+    z-index: 20;
+    top: -10px;
+    left: -10px;
+    width: 200px;
+    height: 100px;    
+    background-color: #888888;
+    color: #FFFFFF;
+    border-radius: 5px;
+    box-shadow: 0px 8px 5px -6px #333333;
+    -webkit-transition: 0.5s Ease;
+    -moz-transition: 0.5s Ease;
+    -o-transition: 0.5s Ease;
+    transition: 0.5s Ease;
+    opacity: 0;
+    
+}
+.show-details:hover .img-info
+{
+    opacity:1;    
+}
+.details-holder h1
+{
+    font-size: 18px;
+    text-transform: uppercase;    
+}
+.details-holder p
+{
+    font-size: 12px;
+}
+
+/* Curtains */
+.gallery img
+{
+    width:200px;   
+}
+.curtain
+{
+    background-image: url('../Images/retina_wood.png');
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0px;
+    top: 0px;
+    opacity: 0.8;
+    z-index: 15;
+    -webkit-transition: 0.5s Ease;
+    -moz-transition: 0.5s Ease;
+    -o-transition: 0.5s Ease;
+    transition: 0.5s Ease;
+}
+.gallery:hover .curtain
+{
+    height: 0;
+}
+
+/* Wheel */
+.roller
+{
+    width: 850px;
+    height: 200px;
+}
+.roller img
+{
+    float: left;
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;    
+    -webkit-transition: 1s Ease;
+    -moz-transition: 1s Ease;
+    -o-transition: 1s Ease;
+    transition: 1s Ease;
+}
+.roller:hover img
+{
+    -webkit-transform: translate(630px, 0px) rotate(360deg);
+    -moz-transform: translate(630px, 0px) rotate(360deg);
+    -o-transform: translate(630px, 0px) rotate(360deg);
+    -ms-transform: translate(630px, 0px) rotate(360deg);
+    transform: translate(630px, 0px) rotate(360deg);
+}
+
+
+
+
+
+
